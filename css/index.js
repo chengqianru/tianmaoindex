@@ -51,6 +51,19 @@
 	})
 
 }
+// banner伸展
+{
+	let labels=document.querySelectorAll(".banner_box_xia_nav_hang");
+	let menus=document.querySelectorAll(".banner_menu");
+	labels.forEach(function(ele,index){
+		ele.onmouseenter=function(){
+			menus[index].style.display="block";
+		}
+		ele.onmouseleave=function(){
+			menus[index].style.display="none";
+		}
+	})
+}
 //top
 {
 	const topbar=document.querySelector(".topbar");
@@ -101,20 +114,43 @@
 }
 //right
 {
-	const spe=document.querySelectorAll(".rigbar_xiao");
+	const spe=document.querySelectorAll(".rigbar_xia_box");
 	const tan=document.querySelectorAll(".rigbar_xia_tan");
+	const fanhui=document.querySelector(".rigbar_xia_zuidi");
+	const box=document.querySelectorAll(".rigbar_xia_bigbox");
+	const erwei=document.querySelectorAll(".rigbar_xia_bigbox3");
 	spe.forEach(function(ele,index){
 		ele.onmouseenter=function(){
-			tan[index-1].style.opacity=1;
-			tan[index-1].style.marginRight="0";
-			// tan[index].style.opacity=1;
-
+			tan[index].style.opacity="1";
+			tan[index].style.marginRight="0";
+			box[index].style.width="125px";
+			erwei[index].style.width="190px";
 		}
 		ele.onmouseleave=function(){
-			tan[index-1].style.opacity=0;
-			tan[index-1].style.marginRight="125px";
-
-			// tan[index].style.zIndex="-1";
+			tan[index].style.opacity=0;
+			tan[index].style.marginRight="125px";
+			box[index].style.width="0";
+			erwei[index].style.width="0";
 		}
 	})
+	// let leftfan=document.querySelector(".leftbar_di");
+	fanhui.onclick=function(){
+		document.documentElement.scrollTop=0;
+	}
+}
+// 国际
+{
+	const title=document.querySelectorAll(".fengqiang_box_title li")
+	const content=document.querySelectorAll(".fengqiang_box_xia_small");
+	title.forEach(function(ele,index){
+		ele.onmouseenter=function(){
+			for(let i=0;i<title.length;i++){
+				title[i].classList.remove("active");
+				content[i].classList.remove("active");
+			}
+			this.classList.add("active");
+			content[index].classList.add("active");
+			// n=index;
+		}
+	});
 }

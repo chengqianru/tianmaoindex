@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'iconfont';  /* project id 603921 */
-  src: url('https://at.alicdn.com/t/font_603921_4xs76vux3onipb9.eot');
-  src: url('https://at.alicdn.com/t/font_603921_4xs76vux3onipb9.eot?#iefix') format('embedded-opentype'),
-  url('https://at.alicdn.com/t/font_603921_4xs76vux3onipb9.woff') format('woff'),
-  url('https://at.alicdn.com/t/font_603921_4xs76vux3onipb9.ttf') format('truetype'),
-  url('https://at.alicdn.com/t/font_603921_4xs76vux3onipb9.svg#iconfont') format('svg');
+  src: url('https://at.alicdn.com/t/font_603921_krppbns0wh52ke29.eot');
+  src: url('https://at.alicdn.com/t/font_603921_krppbns0wh52ke29.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_603921_krppbns0wh52ke29.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_603921_krppbns0wh52ke29.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_603921_krppbns0wh52ke29.svg#iconfont') format('svg');
 }
 .header{
     width: 100%;
@@ -221,6 +221,9 @@
     letter-spacing: normal;
     line-height: 35px;
 }
+.banner_box_shang_right_zi:hover{
+    color: #FF0036;
+}
 .banner_box_shang_right_zi img{
     width: 100px;
     height: 30px;
@@ -241,6 +244,24 @@
     height: 31.2px;
     line-height: 31.2px;
     font-size: 14px;
+}
+.banner_box_xia_nav_hang:hover{
+    background: #fff;
+}
+.banner_box_xia_nav_hang:hover .b_color{
+    color: #e54077;
+}
+.banner_box_xia_nav_hang:hover .b_color2{
+    color: #427def;
+}
+.banner_box_xia_nav_hang:hover .b_color3{
+    color: #6347ed;
+}
+.banner_box_xia_nav_hang:hover .b_color4{
+    color: #fa5c5c;
+}
+.banner_box_xia_nav_hang:hover .b_color5{
+    color: #f7a831;
 }
 .banner_box_xia_nav_hang span{
     margin-left: 14px;
@@ -326,6 +347,9 @@
     cursor: pointer;
     opacity: .3;
 }
+.banner_pagebox li.active{
+    background: #fff;
+}
 .banner_imgs_color{
     height: 100%;
     width: 100%;
@@ -336,6 +360,91 @@
 }
 .banner_imgs_color.active{
     z-index: 9;
+}
+.banner_menu{
+    height: 500px;
+    /* width: 825px; */
+    position: absolute;
+    top: 0;
+    left: 200px;
+    z-index: 999;
+    background: #fff;
+    display: none;
+}
+.banner_menu_left{
+    float: left;
+    width: 583px;
+    margin-left: 30px;
+    margin-top: 19px;
+    background-color: #fff;
+}
+.banner_menu_left_box{
+    width: 583px;
+    height: auto;
+    /* background: skyblue; */
+    float: left;
+    margin-bottom: 5px;
+}
+.banner_menu_left_title{
+    color: #333;
+    margin-right: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    height: 22px;
+    float: left;
+    /* background: red; */
+    padding: 3px 0;
+}
+.banner_menu_left_title h1{
+    font-size: 14px;
+    color: #333;
+    font-weight: 700;
+    float: left;
+}
+.banner_menu_left_title p{
+    font-size: 14px;
+    color: #333;
+    font-weight: 700;
+    float: left;
+}
+.banner_menu_left_zi{
+    width: 483px;
+    float: right;
+    font-size: 12px;
+    /* background: yellowgreen; */
+    border-bottom: 1px dashed rgba(0, 0, 0, .1);
+}
+.banner_menu_left_zi a{
+    line-height: 22px;
+    font-size: 14px;
+    color: #666;
+    float: left;
+    margin-left: 13px;
+}
+.banner_menu_right{
+    float: left;
+    background-color: #FAFAFA;
+    width: 209px;
+    padding: 10px;
+    height: 500px;
+}
+.banner_menu_right_item{
+    float: left;
+    width: 93px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    height: 47px;
+    padding: 5px 10px;
+    background-color: #fff;
+}
+.banner_menu_right_item img{
+    height: 37px;
+    width: 73px;
+}
+.banner_menu_right_item img:hover{
+    opacity: .7;
+    transition: opacity .3s ease-out;
 }
 .content{
     width: 100%;
@@ -456,6 +565,7 @@
     float: left;
     background: #fff;
     position: relative;
+    cursor: pointer;
 }
 .branch_list_img{
     width: 122px;
@@ -650,6 +760,7 @@
     height: 282px;
     margin: 10px;
     box-shadow: 0 2px 8px 0 rgba(0,0,0,.09);
+    position: relative;
 }
 .fengqiang_box_title{
     background: #F1F1F1;
@@ -674,9 +785,21 @@
     font-size: 18px;
     line-height: 30px;
 }
+.fengqiang_box_xia_small{
+    width: 462px;
+    height: 225px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.fengqiang_box_xia_small.active{
+    z-index: 99;
+}
 .fengqiang_box_xia{
     width: 462px;
     height: 225px;
+   
     position: relative;
 }
 .fengqiang_box_xia_item{
@@ -698,7 +821,6 @@
 .fengqiang_box_xia_item_shang img{
     width: 23px;
     height: 23px;
-    margin-top: 6px;
     float: left;
 }
 .fengqiang_box_xia_item_shang span{
@@ -727,6 +849,10 @@
 .fengqiang_box_xia_item2 img{
     width: 200px;
     height: 200px;
+}
+.fengqiang_box_xia_item2 img:hover{
+    opacity: .7;
+    transition: opacity .3s;
 }
 .smallitem{
     width: 234px;
@@ -959,7 +1085,20 @@
     height: 213px;
     margin: auto;
     border-top: 1px solid #ededed;
+    position: relative;
+    /* background: url('../imgs/tianMaoPic.png') 45px bottom no-repeat; */
     /* background: red; */
+}
+.footer_bottom_mao{
+    position: absolute;
+    bottom: 0;
+    left: 45px;
+    height: 25px;
+    width: 50px;
+}
+.footer_bottom_mao img{
+    height: 25px;
+    width: 70px;
 }
 .footer_bottom_item{
     float: left;
@@ -1167,7 +1306,7 @@
     right: 0;
     width: 35px;
     top: 0;
-    z-index: 99999;
+    z-index: 9999;
 }
 .rigbar_icon{
     position: absolute;
@@ -1175,23 +1314,26 @@
     width: 35px;
     height: 35px;
     background-color: #000;
-    z-index: 9;
-    margin: 35px 0px 0px;
+    z-index: 99999;
+    /* margin: 35px 0px 0px; */
+    top: 5%;
     padding: 6px;
 }
-.rigbar_icon img{
+.rigbar_xia_box_pic{
     width: 22px;
     height: 22px;
 }
 .rigbar_middle{
     height: 100px;
+    position: absolute;
     left: 0;
     width: 35px;
     height: 100px;
+    /* top: 78px; */
+    top: 15%;
     background-color: #000;
     /* background: red; */
-    z-index: 9;
-    margin: 78px 0px;
+    z-index: 999;
 }
 .rigbar_middle:hover{
     background: #F60437;
@@ -1244,17 +1386,15 @@
     position: absolute; 
     left: 0;
     width: 35px;
-    background-color: #000;
-    z-index: 9;
-    top: 190px;
+    /* background-color: #000; */
+    z-index: 999;
+    top: 38%;
 }
 .rigbar_xia_bigbox{
     width: 125px;
     height: 35px;
     margin-bottom: 6px;
-    /* background: green; */
     right: 0;
-    overflow: hidden;
     transition: all .5s;
 }
 .rigbar_xia_box{
@@ -1262,6 +1402,9 @@
     right: 0;
     width: 35px;
     height: 35px;
+    cursor: pointer;
+    background: #000;
+    z-index: 999;
 }
 .rigbar_xia_box:hover{
     background: #FF0C3E;
@@ -1272,6 +1415,7 @@
     font-size: 24px;
     line-height: 35px;
     text-align: center;
+    /* background: #000; */
     color: #fff;
     font-weight: lighter;
 }
@@ -1287,7 +1431,6 @@
     height: 35px;
     position: absolute;
     background-color: #494949;
-    color: #FFAA01;
     right: 35px;
     box-shadow: 0 0 5px rgba(0,0,0,.2);
     width: 90px;
@@ -1297,7 +1440,40 @@
     font-size: 14px;
     margin-right: 125px;
     opacity: 0;
-    transition: all .4s;
+    transition: all .6s;
+    z-index: 9999;
+}
+.rigbar_fang{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: -17px;
+    top: 0;
+    color: #494949;
+    z-index: 9;
+    font-size: 34px;
+    line-height: 35px;
+}
+.rigbar_xia_zuidi{
+    position: fixed; 
+    right: 0;
+    bottom: 5px;
+    width: 125px;
+    height: 35px;
+    cursor: pointer;
+    transition: all .5s;
+    z-index: 999;
+    /* background: red; */
+}
+.rigbar_xia_box2{
+    position: absolute; 
+    right: 0;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+.rigbar_xia_box2:hover{
+    background: #FF0C3E;
 }
 .rigbar_xia_pic2{
     width: 16px;
@@ -1306,4 +1482,44 @@
     background-position: -36px -194px;
     margin: 0 auto;
     margin-top: 10px;
+}
+.rigbar_xia2{
+
+    height: 105px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+}
+.rigbar_xia_box3{
+    width: 190px;
+    height: 207px;
+    position: absolute; 
+    bottom: 35px; 
+    z-index: 9;
+    right: 0;
+    cursor: pointer;
+    background: #000;
+    transition: all .5s;
+}
+
+.rigbar_xia_box:hover{
+    background: #FF0C3E;
+}
+.erweitan{
+    width: 155px;
+    height: 207px;
+    right: 35px;
+    background: url('../imgs/wk.png') no-repeat;
+    position: absolute;
+    bottom: 0;
+}
+.rigbar_xia_tan_er{
+    width: 100px;
+    height: 100px;
+    margin: 45px auto 0;
+}
+.rigbar_xia_tan_erw{
+    width: 135px;
+    height: 45px;
 }
