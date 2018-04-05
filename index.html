@@ -6022,8 +6022,8 @@
         <div class="leftbar_item">天猫超市</div>
         <div class="leftbar_item leftbar_item2">天猫国际</div>
         <div class="leftbar_item leftbar_item3">美丽人生</div>
-        <div class="leftbar_item  leftbar_item4">潮电酷玩</div>
-        <div class="leftbar_item  leftbar_item5">居家生活</div>
+        <div class="leftbar_item leftbar_item4">潮电酷玩</div>
+        <div class="leftbar_item leftbar_item5">居家生活</div>
         <div class="leftbar_item  leftbar_item6">打造爱巢</div>
         <div class="leftbar_item  leftbar_item7">户外出行</div>
         <div class="leftbar_item  leftbar_item8">猜你喜欢</div>
@@ -6105,4 +6105,29 @@
     <!-- 右导航结束 -->
 </body>
 <script src="css/index.js"></script>
+<script src="css/jquery.js"></script>
+<script>
+// 左导航
+    $(".leftbar_di").click(function (){
+        $("html,body").animate({scrollTop:0});
+    })
+    $(".leftbar_item").click(function () {      //获取tips
+        let index=$(this).index(".leftbar_item");
+        let ot=$(".box").eq(index).offset().top-150;    //获取所有contain
+        $("html,body").animate({scrollTop:ot},200);
+    })
+    let arr=["#64C333","#FF0036","#EA5F8D","#0AA6E8","#64C333","#F15453","#19C8A9","#FF0036"];
+    $(".leftbar_item").mouseenter(function() {
+        let index=$(this).index(".leftbar_item");
+        $(".leftbar_item").css("background","rgba(0,0,0,.6)").eq(index).css("background",arr[index]);
+    });
+    $(window).scroll(function () {
+        let st=$(window).scrollTop();  //获取当前滚动高度
+            $(".box").each(function (index,ele) {
+                if(st>=$(this).offset().top-150){
+                    $(".leftbar_item").css("background","rgba(0,0,0,.6)").eq(index).css("background",arr[index]);
+                }
+            })
+    })
+</script>
 </html>
