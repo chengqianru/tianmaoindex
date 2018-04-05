@@ -1275,7 +1275,7 @@
 .leftbar_color{
     display: none;
 }
-.leftbar_item:hover{
+/* .leftbar_item:hover{
     background: #64C333;
 }
 .leftbar_item2:hover{
@@ -1298,7 +1298,7 @@
 }
 .leftbar_item8:hover{
     background: #FF0036;
-}
+} */
 .rigbar{
     position: fixed;
     height: 100%;
