@@ -83,35 +83,6 @@
 		
 	}
 }
-//left
-{
-	let items=document.querySelectorAll(".leftbar_item");
-	let contains=document.querySelectorAll(".box");
-	let leftfan=document.querySelector(".leftbar_di");
-	leftfan.onclick=function(){
-		document.documentElement.scrollTop=0;
-	}
-	let flag=true;
-	items.forEach(function(ele,index){
-		ele.onclick=function(){
-			flag=false;
-			let ot=contains[index].offsetTop-150;
-			document.documentElement.scrollTop=ot;
-			let now=document.documentElement.scrollTop;
-			let speed=(ot-now)/10;
-			let time=0;
-			let t=setInterval(function(){
-				time+=25;
-				now+=speed;
-				if(time===200){
-					clearInterval(t);
-					flag=true;
-				}
-				document.documentElement.scrollTop=now;
-			},25)
-		}
-	});
-}
 //right
 {
 	const spe=document.querySelectorAll(".rigbar_xia_box");
